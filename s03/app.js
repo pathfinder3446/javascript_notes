@@ -36,14 +36,23 @@
 
 // write a javascript program taht accept three integers and display the greatest.
 
-const n1 = +prompt('Enter the first number')
-const n2 = +prompt('Enter the second number')
-const n3 = +prompt('Enter the third number')
+// const n1 = +prompt('Enter the first number');
+// const n2 = +prompt('Enter the second number');
+// const n3 = +prompt('Enter the third number');
 
-if (n1 > n2 && n1 > n3) {
-    console.log(`${n1} is the greatest number`)
-} else if (n2 > n3 && n2 > n1) {
-    console.log(`${n2} is the greatest number`)
-} else {
-    console.log(`${n3} is the greatest number`)
-}
+// if (n1 > n2 && n1 > n3) {
+//     console.log(`${n1} is the greatest number`);
+// } else if (n2 > n3 && n2 > n1) {
+//     console.log(`${n2} is the greatest number`);
+// } else {
+//     console.log(`${n3} is the greatest number`);
+// }
+
+
+// Ternary examples
+
+// // program to check pass or fail
+//  let grade = prompt('enter your score:');
+//  // check the condition
+//  let result = grade > 50 ? 'pass' : 'fail';
+//  console.log(`You ${result} the exam.`);
