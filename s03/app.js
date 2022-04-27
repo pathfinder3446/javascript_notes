@@ -56,3 +56,64 @@
 //  // check the condition
 //  let result = grade > 50 ? 'pass' : 'fail';
 //  console.log(`You ${result} the exam.`);
+
+// let age = 18;
+// let result = (age >= 18) 
+// ? 'You are eligible to vote' 
+// : 'You are not eligible to vote yet';
+// console.log(result);
+
+// evaluate if a human can drive a car or not
+// let canDrive = false;
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+// const isHandicapped = false;
+// const usingRegularCar = true;
+// result =
+//   hasDriversLicense && hasGoodVision
+//     ? !isHandicapped
+//       ? 'can drive'
+//       : !usingRegularCar
+//       ? 'can drive'
+//       : 'cannot drive'
+//     : 'cannot drive';
+// console.log(result);
+
+// switch case statement
+
+
+
+
+
+
+
+
+
+// ! example-5  cw weekly program :exclamation:your turn :technologist:
+// pazartesi salı çarşamba perşembe in class
+// cuma team work
+// cumartesi inclass + workshop
+// pazar self study
+// default yanlış gün girildi.
+
+const day = prompt("enter a day: ").toLowerCase();
+
+switch (day) {
+    case "monday":
+    case "tuesday":
+    case "wednesday":
+    case "thursday":
+        console.log(`Inclass`);
+        break
+    case "friday":
+        console.log(`Teamwork`);
+        break
+    case "saturday":
+        console.log(`Inclass and workshop`);
+        break
+    case "sunday":
+        console.log(`Self study.`);
+        break
+    default: 
+        console.log(`${day} is not a day.`);
+}
