@@ -1,4 +1,4 @@
-// console.log(`*******LOOPS******`);
+console.log(`*******LOOPS******`);
 
 // for(let i=1 ; i<=10 ; i++){
 //     const randomsayi = Math.floor(Math.random() *100 + 1) ;
@@ -34,13 +34,31 @@
 
 // örnek
 
-const not = prompt(`Lütfen notunuzu giriniz (0-100):`);
+// let not = prompt(`Lütfen notunuzu giriniz (0-100):`);
+
+// while(not<0 || not>100) {
+//     console.log(`Girdiğiniz not 0-100 arasında olmalıdır.`);
+//     not = prompt(`Lütfen notunuzu giriniz (0-100):`)
+//     }
+//      console.log(`Giridiğiniz not:`, not)
 
 //************* do while ***********
 
-let i = 1;
+// let i = 1;
+
+// do {
+//     console.log(`Merhaba-`, i);
+//     i++;
+// } while (i <= 5);
+
+
+let not;
 
 do {
-    console.log(`Merhaba-`, i);
-    i++;
-} while (i <= 5);
+    not = prompt(`Lütfen notunuzu giriniz (0-100):`);
+    if (not<0 || not>100) {
+        alert(`Girdiğiniz sayı 0-100 arasında olmalıdır`)
+    }
+} while (not<0 || not>100) ;
+ 
+console.log(`Giridiğiniz not:`, not)
