@@ -64,17 +64,38 @@ console.log(`*******LOOPS******`);
 // console.log(`Giridiğiniz not:`, not)
 
 
-//girilen sayının asal sayı olup olmadığını kontrol eden program yazalım.
+//?girilen sayının asal sayı olup olmadığını kontrol eden program yazalım.
 
-let number = Number(prompt(`Enter a number for checking  it is a prime or not: `));
-let count = 0
-for (let i=2; i < number; i++) {
-    if (number % i === 0) {
-      count += 1
-}}
+// let number = Number(prompt(`Enter a number for checking  it is a prime or not: `));
+// let count = 0
+// for (let i=2; i < number; i++) {
+//     if (number % i === 0) {
+//       count += 1
+// }}
 
-if (count > 0) {
-  console.log(`${number} is not prime`);
-} else {
-    console.log(`${number} is prime`);
-}
+// if (count > 0) {
+//   console.log(`${number} is not prime`);
+// } else {
+//     console.log(`${number} is prime`);
+// }
+
+
+//? JS ÖDEV 1: Klavyeden Q karakteri girilene kadar not girişi yapan bir programı döngü kullanarak yazınız.
+
+// let enterGrade;
+// enterGrade = prompt("enter a student grade(0-100) : ");
+// while (enterGrade == "Q" || enterGrade == "q" || enterGrade>0 || enterGrade<100) {
+//     if(enterGrade<0 || enterGrade>100) {
+//         console.log("Girdiğiniz not 0-100 arası olmalıdır");
+        
+//     }
+//     else if(enterGrade == "Q" || enterGrade == "q"){
+//         console.log("quiting...");
+//         break;
+//     } 
+//     else {
+//         console.log(`Grade-${enterGrade}`);
+//     }
+//     enterGrade = prompt("enter a student grade(0-100) : ");
+// }
+
