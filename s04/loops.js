@@ -52,13 +52,29 @@ console.log(`*******LOOPS******`);
 // } while (i <= 5);
 
 
-let not;
+// let not;
 
-do {
-    not = prompt(`Lütfen notunuzu giriniz (0-100):`);
-    if (not<0 || not>100) {
-        alert(`Girdiğiniz sayı 0-100 arasında olmalıdır`)
-    }
-} while (not<0 || not>100) ;
+// do {
+//     not = prompt(`Lütfen notunuzu giriniz (0-100):`);
+//     if (not<0 || not>100) {
+//         alert(`Girdiğiniz sayı 0-100 arasında olmalıdır`)
+//     }
+// } while (not<0 || not>100) ;
  
-console.log(`Giridiğiniz not:`, not)
+// console.log(`Giridiğiniz not:`, not)
+
+
+//girilen sayının asal sayı olup olmadığını kontrol eden program yazalım.
+
+let number = Number(prompt(`Enter a number for checking  it is a prime or not: `));
+let count = 0
+for (let i=2; i < number; i++) {
+    if (number % i === 0) {
+      count += 1
+}}
+
+if (count > 0) {
+  console.log(`${number} is not prime`);
+} else {
+    console.log(`${number} is prime`);
+}
