@@ -113,6 +113,14 @@ console.log(gece);
 const char = tarkan.split(``); //! null karakterine göre harfleri ayırarak bir char dizisi oluşturdu.
 console.log(char); //! (24) ['G', 'e', 'l', ' ', 'g', 'ü', 'n', 'd', 'ü', 'z', 'l', 'e', ' ', 'g', 'e', 'c', 'e', ' ', 'o', 'l', 'a', 'l', 'ı', 'm']
 
+const copyTarkan = tarkan.split(); //! stringi tek elemanlı array haline getirdi.
+console.log(copyTarkan); //! ['Gel gündüzle gece olalım']
+
+
+
 //* ----------------------------------------------------------
 //* trim();
-//* ----------------------------------------------------------
+//* ---------------------------------------------------
+const ramazan = `     Hoş geldin ya şehri Ramazan     `;
+
+console.log(ramazan.trim());
