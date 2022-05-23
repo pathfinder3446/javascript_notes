@@ -32,7 +32,7 @@ return mesaj
 }
 
 const mesaj1 = yasHesapla(2001,`Elif`)
-console.log(mesaj)
+console.log(mesaj1)
 
 console.log(yasHesapla(2001,`Elif`))
 
