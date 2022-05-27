@@ -123,3 +123,11 @@ const buyukIsimler = isimler.map((isim, i, dizi) => {
   const maaslar = [3000, 5000, 4000, 6000, 6500];
   
   //* Maasi 4000 'den büyük olanlara %25 zam yaparak sonuçlari yazdiralim.
+
+  //* ======================================================
+//*                       REDUCE METHOD
+//* ======================================================
+
+//* maas toplamini bulunuz.
+const toplamMaas = maaslar.reduce((t, m) => t + m, 0);
+console.log('TOPLAM MAAS:', toplamMaas);
