@@ -19,9 +19,9 @@ header.style.color = 'red';
 //* EXAMPLE-2 (Button Style)
 //*---------------------------------------------------
 const button = document.getElementById('btn');
-btn.style.backgroundColor = 'black';
-btn.style.color = 'yellow';
-btn.style.fontSize = '2rem';
+button.style.backgroundColor = 'black';
+button.style.color = 'yellow';
+button.style.fontSize = '2rem';
 
 //* ======================================================
 //*                   GETELEMENTSBYTAGNAME()
