@@ -18,15 +18,42 @@
 
 //* Senkron
 //* ---------------------------------------------------------------
-const bekle = (ms) => {
-    const start = new Date().getTime();
-    2000;
-    while (new Date().getTime() < start + ms){}
-};
+// const bekle = (ms) => {
+//     const start = new Date().getTime();
+//     2000;
+//     while (new Date().getTime() < start + ms){}
+// };
 
 
 
-console.log('HELLO');
-// alert(`ITF`) //! blocking code
-bekle(3000);
-console.log('FS11');
+// console.log('HELLO');
+// // alert(`ITF`) //! blocking code
+// bekle(3000);
+// console.log('FS11');
+
+
+//* Asenkron (setTimeout)
+//*-----------------------------------------
+
+// setTimeout(() => {
+//     console.log(`hello`);
+// }, 1000);
+
+// console.log(`world`);
+
+// setTimeout(() => {
+//     console.log(`what's up bro?`);
+// }, 500);
+
+
+//* Asenkron (setInterval, clearInterval)
+//*-----------------------------------------
+
+let counter = 0;
+const sec1 = setInterval(() => {
+    ++counter;
+    if(counter > 9){
+        clearInterval(sec1);
+    }
+    console.log(counter);
+}, 1000);
