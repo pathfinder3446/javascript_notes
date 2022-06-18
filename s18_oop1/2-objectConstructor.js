@@ -64,6 +64,7 @@ console.log(Book.prototype);
 //!instance'larin proto alanini gormk icin .__proto__
 console.log(book1.__proto__);
 
+
 //? INHERITANCE(Kalıtım -ES5)
 //?-------------------------------------
 
