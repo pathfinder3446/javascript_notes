@@ -73,5 +73,14 @@ function Magazine(title, author, year, month) {
     this.month = month;
 }
 
+
+//! prototypelar doğrudan miras olarak gelmez. create etmemiz lazım
+
+Magazine.prototype = Object.create(Book.prototype);
+console.log(Magazine.prototype);
+
+//! prototypeları miras olarak almak için Object.create metodu kullanılabilir.
+
 const mag1 = new Magazine("Scientific Research", "Einstein", 1905, "September")
 console.log(mag1);
+console.log(mag1.getAge());
