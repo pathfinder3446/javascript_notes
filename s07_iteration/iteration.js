@@ -21,7 +21,7 @@ function yazdir(value){
 fiyatlar.forEach((value) => console.log(value));
 
 // fiyatlar dizisindekilerin toplamını alıp yazdıralım
-toplam = 0;
+let toplam = 0;
 fiyatlar.forEach( (fiyat) => toplam += fiyat );
 console.log(`Toplam: `, toplam);
 
@@ -113,9 +113,18 @@ const buyukIsimler = isimler.map((isim, i, dizi) => {
   //*-------------- ÖDEV -------------------
   //* fiyatlar dizisindeki fiyatı 90'dan büyük olan değerleri
   //* konsola tek tek bastırınız.
+
+  const buyuk90 = fiyatlar
+  .filter((f) => f > 90)
+  .forEach((f) => console.log(f));
   
   //* fiyatlar dizisindeki fiyatı 110'dan küçük olan değerlere
   //*  %10 artış yapın ve bu değerleri konsola tek tek bastırınız.
+
+  const yuzde10 = fiyatlar
+  .filter((f) => f < 110)
+  .map((f) => f + (f*0.1))
+  .forEach((f) => console.log(f));
   
   
   //* maaslar 4000'den düsük olanlara %50 zam yapmak istiyoruz

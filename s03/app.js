@@ -34,7 +34,7 @@
 //   console.log("Wrong Size");
 // }
 
-// write a javascript program taht accept three integers and display the greatest.
+// write a javascript program that accept three integers and display the greatest.
 
 // const n1 = +prompt('Enter the first number');
 // const n2 = +prompt('Enter the second number');
